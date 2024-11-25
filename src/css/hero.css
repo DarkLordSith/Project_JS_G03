@@ -1,21 +1,5 @@
 /*HERO - MOBILE CSS*/
 
-/*body,
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth;
-}
-
-ul {
-  list-style-type: none;
-}*/
-
 .section-hero {
   display: flex;
   flex-wrap: wrap;
@@ -24,7 +8,8 @@ ul {
   background-image: url(../img/hero/herodotsmob@1x.png);
   background-color: #f0f0f0;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right top;
+  background-size: contain;
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
@@ -78,8 +63,7 @@ ul {
 .social-media-group {
   display: flex;
   justify-content: flex-start;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 15px;
   text-align: left;
 }
 
@@ -88,7 +72,7 @@ ul {
   font-weight: 300;
   font-size: 14px;
   line-height: 1.5;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   transition: all 0.6s ease;
   text-decoration: none;
 }
@@ -101,13 +85,13 @@ ul {
 
 .section-hero-title {
   font-weight: 400;
-  font-size: 60px;
+  font-size: 64px;
   line-height: 1.25;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.005em;
   text-transform: uppercase;
   color: #f0f0f0;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 
@@ -126,7 +110,7 @@ ul {
 .hero-button-link {
   align-items: center;
   display: block;
-  background-color: #14c57c;
+  background-color: #bcdfd1;
   border: none;
   border-radius: 16px;
   font-weight: 500;
@@ -134,48 +118,41 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #f0f0f0;
+  color: #292929;
   transition: all 0.6s ease;
   text-align: center;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   border-radius: 8px;
-  padding: 17px 24px;
-  width: 240px;
-  height: 60px;
   transition: all 0.6s ease;
   position: absolute;
   left: 25px;
   top: 70%;
   transform: translateY(-50%);
+  width: 240px;
+  height: 100px;
+  padding: 37px 24px;
 }
 
 .hero-button-link:hover {
-  background-color: #14c57c;
+  background-color: #00b068;
   box-shadow: 0 0 1.6rem #009156;
 }
 
 .hero-img {
-  display: block;
   width: 100%;
   max-width: 100%;
-}
-
-.hero-img img {
-  display: block;
-  width: 100%;
   height: auto;
 }
 
 .description-container {
   display: block;
-  align-items: center;
+  text-align: center;
   justify-content: center;
   flex-direction: column;
   background-color: #e4e5e6;
-  width: 110%;
-  height: 204px;
-  padding: 32px 0;
+  width: 100%;
+  height: 208px;
 }
 
 .hero-description {
@@ -187,6 +164,7 @@ ul {
   text-transform: uppercase;
   text-align: center;
   color: #2a2d32;
+  padding: 20px 10px;
 }
 
 /*HERO - TABLET CSS*/
@@ -200,6 +178,7 @@ ul {
     justify-content: center;
     align-items: center;
     background-image: url(../img/hero/herodotstabl@1x.png);
+    background-position: right bottom;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -228,39 +207,39 @@ ul {
 
   .social-media-group {
     display: flex;
-    justify-content: flex-start;
-    text-align: left;
-    font-weight: 300;
+    padding-bottom: 50px;
+    font-weight: 500;
     font-size: 30px;
     line-height: 1.5;
     letter-spacing: 0.03em;
+    gap: 0;
+  }
+
+  .social-media-group a {
+    font-size: 16px;
+    letter-spacing: 0.01em;
   }
 
   .section-hero-title {
     font-size: 124px;
     line-height: 1.15;
     letter-spacing: 0.01em;
-
     text-align: left;
-    padding-bottom: 144px;
+    padding-bottom: 50px;
   }
 
   .hero-button-link {
     align-items: left;
     position: absolute;
-    left: 450px;
-    top: 72%;
+    left: 15px;
+    top: 70%;
     transform: translateY(-50%);
-    padding: 35px 24px;
-    width: 240px;
-    height: 100px;
   }
 
-  .hero-img {
-    display: flex;
-    justify-content: right;
-    width: 336px;
-    height: 508px;
+  .hero-img img {
+    width: 100%;
+    height: auto;
+    padding-left: 250px;
   }
 
   .description-container {
@@ -312,25 +291,16 @@ ul {
 
   .section-hero-title {
     font-size: 136px;
-    margin-bottom: 50px;
   }
 
   .hero-button-link {
-    left: 150px;
-    top: 61%;
-  }
-
-  .hero-img {
-    display: flex;
-    justify-content: center;
+    left: 155px;
+    top: 63%;
   }
 
   .hero-img img {
     width: 488px;
-    height: auto;
-  }
-
-  .description-container {
-    padding: 90px;
+    height: 788px;
+    padding-left: 0;
   }
 }
