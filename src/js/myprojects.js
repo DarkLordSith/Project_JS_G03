@@ -195,15 +195,16 @@ function createProjectItem(project) {
 
   const pictureElement = `
     <picture class="picture">
-      <source srcset="${images["1280"]["1x"]} 1x, ${images["1280"]["2x"]} 2x" media="(min-width: 1280px)">
-      <source srcset="${images["768"]["1x"]} 1x, ${images["768"]["2x"]} 2x" media="(min-width: 768px)">
-      <source srcset="${images["360"]["1x"]} 1x, ${images["360"]["2x"]} 2x" media="(max-width: 767px)">
+      <source srcset="${images["1280"]["1x"]} 1x, ${images["1280"]["2x"]} 2x" media="(min-width: 1280px)" width="1008" height="580">
+      <source srcset="${images["768"]["1x"]} 1x, ${images["768"]["2x"]} 2x" media="(min-width: 768px)" width="704" height="404">
+      <source srcset="${images["360"]["1x"]} 1x, ${images["360"]["2x"]} 2x" media="(max-width: 767px)" width="320" height="184">
       <img src="${images["1280"]["1x"]}" alt="${title}" loading="lazy">
     </picture>
   `;
 
 
   return `
+  <ul>
     <li>
       ${pictureElement}
       <div class="info">
@@ -219,6 +220,7 @@ function createProjectItem(project) {
       </div>
       </div>
     </li>
+    </ul>
   `;
 }
 
